@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f2eb">
+  <meta name="description" content="Nessa Consult. Our website is coming soon. Get in touch with Vanessa at vanessa@nessaconsult.com.">
+  <title>Nessa Consult — Coming Soon</title>
+  <style>
+    :root { color-scheme: light; --paper: #f5f2eb; --ink: #2d2928; --muted: #69615c; --accent: #70414b; --line: #dcd4ca; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100svh; background: var(--paper); color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; display: flex; flex-direction: column; }
+    a { color: inherit; }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 6px; }
+    header, footer { width: min(1240px, calc(100% - 112px)); margin-inline: auto; }
+    header { padding: 32px 0; border-bottom: 1px solid var(--line); display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .brand { display: flex; gap: 13px; align-items: center; font-size: 16px; font-weight: 600; letter-spacing: -.3px; }
+    .monogram { width: 40px; height: 40px; display: grid; place-items: center; border: 1px solid var(--accent); color: var(--accent); border-radius: 50%; font: italic 19px Georgia, serif; letter-spacing: -2px; padding-right: 2px; }
+    .header-note, .eyebrow { font-size: 11px; font-weight: 600; letter-spacing: 2.5px; text-transform: uppercase; }
+    .header-note { color: var(--muted); }
+    main { flex: 1; display: grid; place-items: center; padding: 92px 24px 100px; }
+    .intro { text-align: center; max-width: 920px; }
+    .eyebrow { display: inline-flex; align-items: center; gap: 10px; color: var(--accent); margin: 0 0 32px; }
+    .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
+    h1 { font: 400 clamp(48px, 6.8vw, 88px)/1.07 Georgia, "Times New Roman", serif; letter-spacing: -.045em; margin: 0 0 29px; }
+    h1 em { font-weight: 400; color: var(--accent); }
+    .description { max-width: 430px; margin: 0 auto; color: var(--muted); font-size: 16px; line-height: 1.8; }
+    .contact { display: inline-flex; align-items: center; gap: 28px; padding: 17px 25px; background: var(--accent); color: #fff; border-radius: 3px; text-decoration: none; font-size: 14px; font-weight: 500; margin: 35px 0 18px; transition: background .15s ease; }
+    .contact:hover { background: #57303a; }
+    .arrow { font-size: 20px; line-height: 1; }
+    .email { display: block; width: fit-content; max-width: 100%; margin: 0 auto; color: var(--muted); font-size: 13px; text-decoration-color: var(--line); text-underline-offset: 5px; overflow-wrap: anywhere; }
+    footer { border-top: 1px solid var(--line); padding: 24px 0; display: flex; justify-content: space-between; gap: 18px; font-size: 11px; color: var(--muted); }
+    footer span:last-child { letter-spacing: .5px; }
+    @media (max-width: 600px) {
+      header, footer { width: calc(100% - 40px); }
+      header { padding: 22px 0; }
+      .header-note { font-size: 9px; letter-spacing: 1.4px; }
+      .brand { font-size: 14px; gap: 9px; }
+      .monogram { width: 34px; height: 34px; font-size: 17px; }
+      main { padding: 76px 22px 82px; }
+      h1 { font-size: clamp(44px, 11vw, 64px); }
+      .eyebrow { margin-bottom: 25px; }
+      .description { max-width: 330px; font-size: 15px; }
+      footer { font-size: 10px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand"><span class="monogram" aria-hidden="true">NC</span><span>Nessa Consult</span></div>
+    <span class="header-note">A new chapter</span>
+  </header>
+  <main>
+    <section class="intro" aria-labelledby="page-title">
+      <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Coming soon</p>
+      <h1 id="page-title">A new home for<br><em>Nessa Consult.</em></h1>
+      <p class="description">Our website is on its way. In the meantime, we'd love to hear from you.</p>
+      <a class="contact" href="mailto:vanessa@nessaconsult.com">Get in touch with Vanessa <span class="arrow" aria-hidden="true">↗</span></a>
+      <a class="email" href="mailto:vanessa@nessaconsult.com">vanessa@nessaconsult.com</a>
+    </section>
+  </main>
+  <footer><span>© 2026 Nessa Consult</span><span>nessaconsult.com</span></footer>
+</body>
+</html>
